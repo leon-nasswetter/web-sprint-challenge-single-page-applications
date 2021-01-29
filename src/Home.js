@@ -13,12 +13,13 @@ export default function Home() {
       <div className="home-wrapper">
         <img
           className="home-image"
-          src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          src="https://images.pexels.com/photos/3944308/pexels-photo-3944308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
           alt="Picture of Pizza"
         />
         <button onClick={routeToShop} className="pizza-button">
-          Pizza!
+          CLICK TO ORDER!
         </button>
+        <div className="home-line"></div>
       </div>
     );
   }

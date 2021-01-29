@@ -90,8 +90,8 @@ const submitForm = () => {
       <nav>
         <h1 className="store-header">LAMBDA EATS</h1>
         <div className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="#">Help</Link>
+          <Link className="nav-button" to="/">Home</Link>
+          <Link className="nav-button" to="#">Help</Link>
         </div>
       </nav>
 

@@ -96,7 +96,7 @@ export default function Pizza(props) {
                 {/* TOPPINGS--------------------------------- */}
                 <div className="subcategory-header">
                     <h3>Add Toppings</h3>
-                    <p className="headerP">Choose up to 10</p>
+                    <p className="headerP"></p>
                 </div>
                 <div className="topping-choices">
                     <label>Pepperoni
@@ -210,6 +210,7 @@ export default function Pizza(props) {
                     <h3>Special Instructions</h3>
                 </div>
                 <input 
+                    className="special-field"
                     type="text"
                     name="special"
                     value={values.special}
@@ -218,6 +219,7 @@ export default function Pizza(props) {
                 />
                 <div className="lineDiv"></div>
                 <input 
+                    className="text-field"
                     type="text"
                     name="name"
                     value={values.name}

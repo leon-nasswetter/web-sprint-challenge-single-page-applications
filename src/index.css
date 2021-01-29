@@ -1,5 +1,5 @@
 * {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 body {
   margin: 0;
@@ -15,9 +15,69 @@ code {
     monospace;
 }
 
+nav {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 2%;
+  border-bottom: 3px solid #1A1918;
+  margin-bottom: 1%;
+  background-color: #a8763e;
+  color:  #fdfefd;
+  text-shadow:2px 2px #6f1a07;
+  
+}
+
+.nav-button {
+  border: 1px solid black;
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-shadow: none;
+  text-decoration: none;
+  color: #6f1a07;
+  background-color: #fdfefd;
+  opacity: 0.9;
+}
+.nav-button:hover {
+  background-color: #6f1a07;
+  color:  #fdfefd;
+}
+
+
+.pizza-button {
+  width: 15%;
+  padding: 10px;
+  margin: 1% 0;
+  background-color:  #fdfefd;
+  color: #6f1a07;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.pizza-button:hover {
+  background-color: #6f1a07;
+  color: #fdfefd;
+  transform: scale(1.2);
+}
+
+
 .pizza-image {
   height: 30vh;
 }
+
+.home-image {
+  max-width: 100%;
+  height:50vh;
+  margin: 0 10%;
+  border-radius: 5%;
+}
+
+.home-line {
+  width: 90%;
+  border: 1px solid #0d1010;
+}
+
 
 h3 {
   margin-block-end: 0;
@@ -30,9 +90,77 @@ p {
 
 .pizza-wrapper {
   width: 50%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  border: 1px solid black;
+}
+
+h2 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  background-color: #6f1a07;
+  padding: 1% 2%;
+}
+
+select {
+  width: 30%;
+  margin: 1%;
+}
+
+.subcategory-header {
+  background-color: #a8763e;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1%;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .lineDiv {
   border: 1px solid black;
+}
+
+.sauce-choices {
+  padding: 1%;
+}
+
+
+.topping-choices {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-field{
+  margin: 1%;
+  width: 40%;
+}
+
+.special-field {
+  margin: 1%;
+  width: 80%;
+}
+
+.orderButton {
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.topping-choices label {
+  border: 1px solid black;
+  padding: 2px;
+  margin: 2px;
+}
+
+
+.pizzaCard h4, p {
+  border-bottom: 1px solid black;
+  padding: 1%;
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
