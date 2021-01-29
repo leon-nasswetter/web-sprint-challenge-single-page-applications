@@ -1,7 +1,7 @@
 describe("User Onboarding app", () => {
 
     beforeEach(() => {
-        cy.visit("http://localhost:3002");
+        cy.visit("http://localhost:3000");
     });
 
     it("Sanity test", () => {
