@@ -1,5 +1,6 @@
-import userEvent from "@testing-library/user-event";
+// import userEvent from "@testing-library/user-event";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Pizza(props) {
 
@@ -224,7 +225,9 @@ export default function Pizza(props) {
                     placeholder="Your Name Here"
                 />
                 <div className="orderButton">
-                    <button>Add to Order</button>
+                    <Link to="/order" >
+                        <button >Add to Order</button>
+                    </Link>
                 </div>
                 {/* ERROR RENDER---------------------------------- */}
                 <div className='errors'>

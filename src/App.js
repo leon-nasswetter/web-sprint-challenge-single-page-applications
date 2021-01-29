@@ -4,6 +4,7 @@ import Home from "./Home";
 import Pizza from "./Pizza";
 import YupSchema from "./validation/formSchema";
 import * as yup from "yup";
+import Order from "./Order";
 
 
 const initialOrder = {
@@ -77,8 +78,8 @@ const submitForm = () => {
   if(!newOrder.name || !newOrder.sauce || !newOrder.size)
     return;
   setOrderHistory([newOrder, ...orderHistory])
-  console.log(newOrder)
-  setOrder(initialOrder)
+  console.log("new order", newOrder)
+  // setOrder(initialOrder)
 }
 
 
@@ -102,6 +103,9 @@ const submitForm = () => {
             errors={formErrors}
             submit={submitForm}
           />
+        </Route>
+        <Route path="/order">
+            <Order values={order}/>
         </Route>
         <Route path="/">
           <Home />
