@@ -14,11 +14,11 @@ export default function Home() {
       <div className="home-wrapper">
         <img
           className="home-image"
-          src="https://source.unsplash.com/F6-U5fGAOik"
-          alt=""
+          src="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+          alt="Picture of Pizza"
         />
         <button onClick={routeToShop} className="pizza-button">
-          Shop now!
+          Pizza!
         </button>
       </div>
     );
