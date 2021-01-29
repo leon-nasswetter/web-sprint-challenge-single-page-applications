@@ -79,7 +79,7 @@ const submitForm = () => {
     return;
   setOrderHistory([newOrder, ...orderHistory])
   console.log("new order", newOrder)
-  // setOrder(initialOrder)
+  setOrder(initialOrder)
 }
 
 
@@ -90,7 +90,7 @@ const submitForm = () => {
       <nav>
         <h1 className="store-header">LAMBDA EATS</h1>
         <div className="nav-links">
-          <Link className="nav-button" to="/">Home</Link>
+          <Link className="nav-button" id="homeBtn" to="/">Home</Link>
           <Link className="nav-button" to="#">Help</Link>
         </div>
       </nav>

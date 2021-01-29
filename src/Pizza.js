@@ -227,7 +227,7 @@ export default function Pizza(props) {
                     placeholder="Your Name Here"
                 />
                 <div className="orderButton">
-                    <Link to="/order" >
+                    <Link className="link-button" to="/order" >
                         <button >Add to Order</button>
                     </Link>
                 </div>
